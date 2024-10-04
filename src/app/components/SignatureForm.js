@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { ClipboardIcon } from '@heroicons/react/24/outline';
 import toast from 'react-hot-toast';
+import '../css/TGbutton.css';
 
 export default function SignatureForm() {
   const [formData, setFormData] = useState({
@@ -46,9 +47,36 @@ export default function SignatureForm() {
     
     try {
       document.execCommand('copy');
-      toast.success('Signature copied to clipboard!');
+      toast.custom((t) => (
+        <div
+          className={`${
+            t.visible ? 'animate-enter' : 'animate-leave'
+          } max-w-md w-full bg-white shadow-lg rounded-lg pointer-events-auto flex items-center ring-1 ring-black ring-opacity-5`}
+        >
+          <div className="flex-1 p-4">
+            <div className="flex items-start">
+              <div className="flex-shrink-0 pt-0.5">
+                <ClipboardIcon className="h-10 w-10 text-green-500" />
+              </div>
+              <div className="ml-3 flex-1">
+                <p className="text-sm font-medium text-gray-900">
+                  Signature copied!
+                </p>
+                <p className="mt-1 text-sm text-gray-500">
+                  Your signature has been copied to the clipboard.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      ), {
+        duration: 3000,
+        position: 'top-left'
+      });
     } catch (err) {
-      toast.error('Failed to copy signature. Please try again.');
+      toast.error('Failed to copy signature. Please try again.', {
+        position: 'top-left'
+      });
     }
     
     window.getSelection().removeAllRanges();
@@ -202,10 +230,13 @@ export default function SignatureForm() {
         </div>
         <button
           onClick={copyToClipboard}
-          className="mt-6 bg-gradient-to-r from-green-400 to-green-500 text-white py-2 px-6 rounded-full hover:from-green-500 hover:to-green-600 transition-all duration-200 ease-in-out shadow-md font-semibold flex items-center justify-center"
+          className="mt-6 relative overflow-hidden py-2 px-6 rounded-full text-white font-semibold shadow-md flex items-center justify-center group transition-transform duration-200 ease-in-out hover:scale-105"
         >
-          <ClipboardIcon className="w-5 h-5 mr-2" />
-          Copy to Clipboard
+          <span className="absolute inset-0 bg-gradient-animation"></span>
+          <span className="relative flex items-center z-10">
+            <ClipboardIcon className="w-5 h-5 mr-2" />
+            Copy to Clipboard
+          </span>
         </button>
       </div>
       <div className="w-full lg:w-2/5 order-1 lg:order-2">
