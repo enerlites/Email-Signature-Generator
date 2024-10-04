@@ -83,11 +83,11 @@ export default function LiderSignatureForm({ company }) {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row gap-12 bg-gray-50 p-8 rounded-2xl shadow-lg max-w-7xl mx-auto">
+    <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 bg-gray-50 p-4 lg:p-8 rounded-2xl shadow-lg max-w-7xl mx-auto">
       <div className="w-full lg:w-3/5 order-2 lg:order-1">
-        <h2 className="text-2xl font-semibold mb-6 text-gray-800">Signature Preview</h2>
-        <div id="signature-preview" className="bg-white p-6 rounded-xl shadow-md overflow-x-auto">
-          <table cellPadding="0" cellSpacing="0" style={{fontFamily: 'Arial, sans-serif', fontSize: '14px', lineHeight: '1.6', color: '#333333', borderCollapse: 'collapse', width: '100%', maxWidth: '600px'}}>
+        <h2 className="text-xl lg:text-2xl font-semibold mb-4 lg:mb-6 text-gray-800">Signature Preview</h2>
+        <div id="signature-preview" className="bg-white p-3 lg:p-6 rounded-xl shadow-md overflow-x-auto">
+          <table cellPadding="0" cellSpacing="0" style={{fontFamily: 'Arial, sans-serif', fontSize: '12px', lineHeight: '1.4', color: '#333333', borderCollapse: 'collapse', width: '100%', maxWidth: '100%'}}>
             <tbody>
               <tr>
                 <td style={{width: '65%', verticalAlign: 'top', padding: '0 20px 0 0'}}>
@@ -251,8 +251,8 @@ export default function LiderSignatureForm({ company }) {
         </button>
       </div>
       <div className="w-full lg:w-2/5 order-1 lg:order-2">
-        <h2 className="text-2xl font-semibold mb-6 text-gray-800">Enter Your Details</h2>
-        <form className="space-y-4">
+        <h2 className="text-xl lg:text-2xl font-semibold mb-4 lg:mb-6 text-gray-800">Enter Your Details</h2>
+        <form className="space-y-3 lg:space-y-4">
           <input
             type="text"
             name="name"
