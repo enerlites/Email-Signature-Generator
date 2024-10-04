@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { ClipboardIcon } from '@heroicons/react/24/outline';
 import toast from 'react-hot-toast';
 import '../css/TGbutton.css';
-import '../css/LiderButton.css';
+import '../css/LIDERbutton.css';
 
 export default function SignatureForm({ company }) {
   const [formData, setFormData] = useState({
