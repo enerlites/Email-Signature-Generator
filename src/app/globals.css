@@ -25,3 +25,25 @@ body {
     text-wrap: balance;
   }
 }
+
+@keyframes enter {
+  0% { transform: translateY(-100%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes leave {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-100%); opacity: 0; }
+}
+
+.animate-enter {
+  animation: enter 0.2s ease-out;
+}
+
+.animate-leave {
+  animation: leave 0.15s ease-in forwards;
+}
+
+.green-filter {
+  filter: brightness(0) saturate(100%) invert(58%) sepia(10%) saturate(3046%) hue-rotate(78deg) brightness(95%) contrast(76%);
+}
