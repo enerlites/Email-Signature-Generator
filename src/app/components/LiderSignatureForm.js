@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { ClipboardIcon } from '@heroicons/react/24/outline';
 import toast from 'react-hot-toast';
-import '../css/LiderButton.css';
+import '../css/LIDERButton.css';
 
 export default function LiderSignatureForm({ company }) {
   const [formData, setFormData] = useState({
