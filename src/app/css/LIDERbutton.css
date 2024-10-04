@@ -1,4 +1,4 @@
-@keyframes tgGradientAnimation {
+@keyframes gradientAnimation {
     0% {
       background-position: 0% 50%;
     }
@@ -7,10 +7,10 @@
     }
   }
   
-  .tg-gradient-animation {
+  .bg-gradient-animation {
     background: linear-gradient(90deg, 
-      #4ade80, #22c55e, #16a34a, #4ade80
+      #0066cc, #0052a3, #003d7a, #0052a3, #0066cc
     );
     background-size: 200% 100%;
-    animation: tgGradientAnimation 5s linear infinite; /* Changed from 10s to 5s */
+    animation: gradientAnimation 5s linear infinite;
   }

@@ -1,33 +1,20 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import { ClipboardIcon } from '@heroicons/react/24/outline';
 import toast from 'react-hot-toast';
-import '../css/TGbutton.css';
 import '../css/LiderButton.css';
 
-export default function SignatureForm({ company }) {
+export default function LiderSignatureForm({ company }) {
   const [formData, setFormData] = useState({
     name: '',
     position: '',
     email: '',
-    phone: '(844) 390-2568',
+    phone: '(833) 977-3915',
     company: '',
     website: '',
   });
-
-  useEffect(() => {
-    // Reset form data when company changes
-    setFormData({
-      name: '',
-      position: '',
-      email: '',
-      phone: company === 'topgreener' ? '(844) 390-2568' : '(833) 977-3915',
-      company: '',
-      website: '',
-    });
-  }, [company]);
 
   const handleChange = (e) => {
     let { name, value } = e.target;
@@ -41,7 +28,7 @@ export default function SignatureForm({ company }) {
         if (value.length <= 3) {
           value = `(${value}`;
         } else if (value.length <= 6) {
-          value = `(${value.slice(0, 3)}) ${value.slice(3)}`; // Space instead of dash
+          value = `(${value.slice(0, 3)}) ${value.slice(3)}`;
         } else {
           value = `(${value.slice(0, 3)}) ${value.slice(3, 6)}-${value.slice(6, 10)}`;
         }
@@ -69,7 +56,7 @@ export default function SignatureForm({ company }) {
           <div className="flex-1 p-4">
             <div className="flex items-start">
               <div className="flex-shrink-0 pt-0.5">
-                <ClipboardIcon className="h-10 w-10 text-green-500" />
+                <ClipboardIcon className="h-10 w-10 text-blue-500" />
               </div>
               <div className="ml-3 flex-1">
                 <p className="text-sm font-medium text-gray-900">
@@ -116,11 +103,11 @@ export default function SignatureForm({ company }) {
                                     {formData.name || 'Full Name'}
                                   </strong>
                                   <span style={{color: '#666666', display: 'block'}}>{formData.position || 'Job Title'}</span>
-                                  <span style={{color: '#666666', display: 'block'}}>{formData.company || 'Top Greener Inc.'}</span>
+                                  <span style={{color: '#666666', display: 'block'}}>{formData.company || 'Lider Electric'}</span>
                                 </td>
                                 <td style={{width: '96px', verticalAlign: 'top'}}>
                                   <Image 
-                                    src="/Triangle.png" 
+                                    src="/LiderTriangle.png" 
                                     alt="Corner" 
                                     width={96} 
                                     height={96} 
@@ -138,15 +125,15 @@ export default function SignatureForm({ company }) {
                             <tbody>
                               <tr>
                                 <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
-                                  <Image src="/Email-Icon.png" alt="Email" width={20} height={20} className="green-filter" />
+                                  <Image src="/LiderEmail-Icon.png" alt="Email" width={20} height={20} className="blue-filter" />
                                 </td>
                                 <td style={{color: '#666666'}}>
-                                  <a href={`mailto:${formData.email || 'your.name@topgreener.com'}`} style={{color: '#0066cc', textDecoration: 'none'}}>{formData.email || 'your.name@topgreener.com'}</a>
+                                  <a href={`mailto:${formData.email || 'your.name@lider-electric.com'}`} style={{color: '#0066cc', textDecoration: 'none'}}>{formData.email || 'your.name@lider-electric.com'}</a>
                                 </td>
                               </tr>
                               <tr>
                                 <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
-                                  <Image src="/Phone-Icon.png" alt="Phone" width={20} height={20} className="green-filter" />
+                                  <Image src="/LiderPhone-Icon.png" alt="Phone" width={20} height={20} className="blue-filter" />
                                 </td>
                                 <td style={{color: '#666666'}}>
                                   <span>{formData.phone}</span>
@@ -154,18 +141,18 @@ export default function SignatureForm({ company }) {
                               </tr>
                               <tr>
                                 <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
-                                  <Image src="/Location-Icon.png" alt="Location" width={20} height={20} className="green-filter" />
+                                  <Image src="/LiderLocation-Icon.png" alt="Location" width={20} height={20} className="blue-filter" />
                                 </td>
                                 <td style={{color: '#666666'}}>
-                                  <span>19800 MacArthur Blvd #300, Irvine, CA 92612</span>
+                                  <span>4695 MacArthur Court, 11th Floor Newport Beach, CA 92660</span>
                                 </td>
                               </tr>
                               <tr>
                                 <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
-                                  <Image src="/Web-Icon.png" alt="Website" width={20} height={20} className="green-filter" />
+                                  <Image src="/LiderWeb-Icon.png" alt="Website" width={20} height={20} className="blue-filter" />
                                 </td>
                                 <td style={{color: '#666666'}}>
-                                  <a href={formData.website || 'https://topgreener.com'} style={{color: '#0066cc', textDecoration: 'none'}}>{formData.website || 'topgreener.com'}</a>
+                                  <a href={formData.website || 'https://www.lider-electric.com'} style={{color: '#0066cc', textDecoration: 'none'}}>{formData.website || 'www.lider-electric.com'}</a>
                                 </td>
                               </tr>
                             </tbody>
@@ -175,27 +162,27 @@ export default function SignatureForm({ company }) {
                     </tbody>
                   </table>
                 </td>
-                <td style={{width: '35%', verticalAlign: 'top', borderLeft: '2px solid #4CAF50', padding: '0 0 0 20px'}}>
+                <td style={{width: '35%', verticalAlign: 'top', borderLeft: '2px solid #0066CC', padding: '0 0 0 20px'}}>
                   <table cellPadding="0" cellSpacing="0" style={{width: '100%'}}>
                     <tbody>
                       <tr>
                         <td align="center">
                           <Image
-                            src="/TG-logo.png"
-                            alt="Top Greener Logo"
-                            width={120}
-                            height={120}
+                            src="/Lider-logo.png"
+                            alt="Lider Electric Logo"
+                            width={100}
+                            height={100}
                             className="rounded-full"
                           />
                         </td>
                       </tr>
                       <tr>
-                        <td align="center">
+                        <td align="center" style={{paddingTop: '10px'}}>
                           <Image
-                            src="/TG-main.png"
-                            alt="Top Greener"
-                            width={150}
-                            height={50}
+                            src="/Lider-main.png"
+                            alt="Lider Electric"
+                            width={120}  // Reduced from 150
+                            height={40}  // Reduced from 50
                             style={{display: 'block', marginBottom: '5px'}}
                           />
                         </td>
@@ -211,23 +198,23 @@ export default function SignatureForm({ company }) {
                             <tbody>
                               <tr>
                                 <td style={{padding: '0 2px'}}>
-                                  <a href="https://www.instagram.com/topgreener" target="_blank" rel="noopener noreferrer">
-                                    <Image src="/Instagram.png" alt="Instagram" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                  <a href="https://www.instagram.com/liderelectric" target="_blank" rel="noopener noreferrer">
+                                    <Image src="/LiderInstagram.png" alt="Instagram" width={32} height={32} style={{display: 'block', border: 'none'}} />
                                   </a>
                                 </td>
                                 <td style={{padding: '0 2px'}}>
-                                  <a href="https://www.facebook.com/topgreener" target="_blank" rel="noopener noreferrer">
-                                    <Image src="/Facebook.png" alt="Facebook" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                  <a href="https://www.facebook.com/liderelectric" target="_blank" rel="noopener noreferrer">
+                                    <Image src="/LiderFacebook.png" alt="Facebook" width={32} height={32} style={{display: 'block', border: 'none'}} />
                                   </a>
                                 </td>
                                 <td style={{padding: '0 2px'}}>
-                                  <a href="https://www.youtube.com/@TOPGREENER-Channel" target="_blank" rel="noopener noreferrer">
-                                    <Image src="/Youtube.png" alt="YouTube" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                  <a href="https://www.youtube.com/@LiderElectric" target="_blank" rel="noopener noreferrer">
+                                    <Image src="/LiderYoutube.png" alt="YouTube" width={32} height={32} style={{display: 'block', border: 'none'}} />
                                   </a>
                                 </td>
                                 <td style={{padding: '0 2px'}}>
-                                  <a href="https://www.linkedin.com/company/top-greener/" target="_blank" rel="noopener noreferrer">
-                                    <Image src="/LinkedIn.png" alt="LinkedIn" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                  <a href="https://www.linkedin.com/company/lider-electric/" target="_blank" rel="noopener noreferrer">
+                                    <Image src="/LiderLinkedIn.png" alt="LinkedIn" width={32} height={32} style={{display: 'block', border: 'none'}} />
                                   </a>
                                 </td>
                               </tr>
@@ -254,11 +241,9 @@ export default function SignatureForm({ company }) {
         </div>
         <button
           onClick={copyToClipboard}
-          className={`mt-6 relative overflow-hidden py-2 px-6 rounded-full text-white font-semibold shadow-md flex items-center justify-center ${
-            company === 'topgreener' ? 'tg-button' : 'lider-button'
-          }`}
+          className="mt-6 relative overflow-hidden py-2 px-6 rounded-full text-white font-semibold shadow-md flex items-center justify-center"
         >
-          <span className={`absolute inset-0 ${company === 'topgreener' ? 'tg-gradient-animation' : 'lider-gradient-animation'}`}></span>
+          <span className="absolute inset-0 bg-gradient-animation"></span>
           <span className="relative flex items-center z-10">
             <ClipboardIcon className="w-5 h-5 mr-2" />
             Copy to Clipboard
@@ -274,7 +259,7 @@ export default function SignatureForm({ company }) {
             placeholder="First & Last Name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-400 focus:border-transparent focus:outline-none transition-all duration-200 ease-in-out text-gray-800 placeholder-gray-400"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent focus:outline-none transition-all duration-200 ease-in-out text-gray-800 placeholder-gray-400"
             required
           />
           <input
@@ -283,25 +268,25 @@ export default function SignatureForm({ company }) {
             placeholder="Job Title"
             value={formData.position}
             onChange={handleChange}
-            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-400 focus:border-transparent focus:outline-none transition-all duration-200 ease-in-out text-gray-800 placeholder-gray-400"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent focus:outline-none transition-all duration-200 ease-in-out text-gray-800 placeholder-gray-400"
             required
           />
           <input
             type="email"
             name="email"
-            placeholder="your.name@topgreener.com"
+            placeholder="your.name@lider-electric.com"
             value={formData.email}
             onChange={handleChange}
-            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-400 focus:border-transparent focus:outline-none transition-all duration-200 ease-in-out text-gray-800 placeholder-gray-400"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent focus:outline-none transition-all duration-200 ease-in-out text-gray-800 placeholder-gray-400"
             required
           />
           <input
             type="tel"
             name="phone"
-            placeholder="(844) 390-2568"
+            placeholder="(833) 977-3915"
             value={formData.phone}
             onChange={handleChange}
-            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-400 focus:border-transparent focus:outline-none transition-all duration-200 ease-in-out text-gray-800 placeholder-gray-400"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent focus:outline-none transition-all duration-200 ease-in-out text-gray-800 placeholder-gray-400"
             required
           />
         </form>
