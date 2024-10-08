@@ -91,91 +91,68 @@ export default function LiderSignatureForm({ company }) {
             <tbody>
               <tr>
                 <td style={{width: '35%', verticalAlign: 'top', padding: '0 20px 0 0', position: 'relative'}}>
-                  <div style={{position: 'relative', width: '100%', height: '200px'}}>
-                    {/* VML for Outlook */}
-                    <div dangerouslySetInnerHTML={{ __html: `
-                      <!--[if gte mso 9]>
-                      <v:rect style="position:absolute;width:100px;height:100px;left:0;top:100px;" fillcolor="#FFFFFF" stroked="false">
-                        <v:fill type="frame" src="wavy.png" />
-                      </v:rect>
-                      <![endif]-->
-                    ` }} />
-                    
-                    {/* Image for other clients */}
-                    <Image
-                      src="/wavy.png"
-                      alt="Wavy background"
-                      width={100}
-                      height={100}
-                      style={{
-                        position: 'absolute',
-                        bottom: '0',
-                        left: '0',
-                        zIndex: '1'
-                      }}
-                    />
-                    
-                    {/* Content */}
-                    <table cellPadding="0" cellSpacing="0" style={{width: '100%', position: 'relative', zIndex: '2'}}>
-                      <tbody>
-                        <tr>
-                          <td align="center" style={{paddingTop: '10px'}}>
-                            <Image
-                              src="/Lider-main.png"
-                              alt="Lider Electric"
-                              width={120}
-                              height={40}
-                              style={{display: 'block', marginBottom: '5px'}}
-                            />
-                            <p style={{
-                              fontSize: '12px',
-                              color: '#666666',
-                              margin: '5px 0 0',
-                              textAlign: 'center',
-                              fontStyle: 'italic'
-                            }}>
-                              Innovation · Creation · Inspiration
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td align="center" style={{paddingTop: '5px'}}>
-                            <p style={{fontSize: '14px', fontWeight: 'bold', margin: '0'}}>@lider_electric</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td align="center" style={{paddingTop: '5px'}}>
-                            <table cellPadding="0" cellSpacing="0">
-                              <tbody>
-                                <tr>
-                                  <td style={{padding: '0 2px'}}>
-                                    <a href="https://www.instagram.com/liderelectric" target="_blank" rel="noopener noreferrer">
-                                      <Image src="/LiderInstagram.png" alt="Instagram" width={32} height={32} style={{display: 'block', border: 'none'}} />
-                                    </a>
-                                  </td>
-                                  <td style={{padding: '0 2px'}}>
-                                    <a href="https://www.facebook.com/liderelectric" target="_blank" rel="noopener noreferrer">
-                                      <Image src="/LiderFacebook.png" alt="Facebook" width={32} height={32} style={{display: 'block', border: 'none'}} />
-                                    </a>
-                                  </td>
-                                  <td style={{padding: '0 2px'}}>
-                                    <a href="https://www.youtube.com/@LiderElectric" target="_blank" rel="noopener noreferrer">
-                                      <Image src="/LiderYoutube.png" alt="YouTube" width={32} height={32} style={{display: 'block', border: 'none'}} />
-                                    </a>
-                                  </td>
-                                  <td style={{padding: '0 2px'}}>
-                                    <a href="https://www.linkedin.com/company/lider-electric/" target="_blank" rel="noopener noreferrer">
-                                      <Image src="/LiderLinkedIn.png" alt="LinkedIn" width={32} height={32} style={{display: 'block', border: 'none'}} />
-                                    </a>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                  <table cellPadding="0" cellSpacing="0" style={{width: '100%', position: 'relative', zIndex: '2'}}>
+                    <tbody>
+                      <tr>
+                        <td style={{height: '30px'}}></td>
+                      </tr>
+                      <tr>
+                        <td align="center" style={{paddingTop: '10px'}}>
+                          <Image
+                            src="/Lider-main.png"
+                            alt="Lider Electric"
+                            width={120}
+                            height={40}
+                            style={{display: 'block', marginBottom: '5px'}}
+                          />
+                          <p style={{
+                            fontSize: '12px',
+                            color: '#666666',
+                            margin: '5px 0 0',
+                            textAlign: 'center',
+                            fontStyle: 'italic'
+                          }}>
+                            Innovation · Creation · Inspiration
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style={{paddingTop: '5px'}}>
+                          <p style={{fontSize: '14px', fontWeight: 'bold', margin: '0'}}>Connect with us!</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style={{paddingTop: '5px', position: 'relative', zIndex: '3'}}>
+                          <table cellPadding="0" cellSpacing="0">
+                            <tbody>
+                              <tr>
+                                <td style={{padding: '0 2px'}}>
+                                  <a href="https://www.instagram.com/liderelectric" target="_blank" rel="noopener noreferrer">
+                                    <Image src="/LiderInstagram.png" alt="Instagram" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                  </a>
+                                </td>
+                                <td style={{padding: '0 2px'}}>
+                                  <a href="https://www.facebook.com/liderelectric" target="_blank" rel="noopener noreferrer">
+                                    <Image src="/LiderFacebook.png" alt="Facebook" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                  </a>
+                                </td>
+                                <td style={{padding: '0 2px'}}>
+                                  <a href="https://www.youtube.com/@LiderElectric" target="_blank" rel="noopener noreferrer">
+                                    <Image src="/LiderYoutube.png" alt="YouTube" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                  </a>
+                                </td>
+                                <td style={{padding: '0 2px'}}>
+                                  <a href="https://www.linkedin.com/company/lider-electric/" target="_blank" rel="noopener noreferrer">
+                                    <Image src="/LiderLinkedIn.png" alt="LinkedIn" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                  </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </td>
                 <td style={{width: '45%', verticalAlign: 'top', borderLeft: '2px solid #0066CC', padding: '0 0 0 20px', position: 'relative'}}>
                   <table cellPadding="0" cellSpacing="0" style={{width: '100%'}}>
