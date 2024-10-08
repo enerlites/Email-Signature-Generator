@@ -91,60 +91,68 @@ export default function LiderSignatureForm({ company }) {
             <tbody>
               <tr>
                 <td style={{width: '35%', verticalAlign: 'top', padding: '0 20px 0 0', position: 'relative'}}>
-                  <table cellPadding="0" cellSpacing="0" style={{width: '100%', position: 'relative', zIndex: '2'}}>
+                  <table cellPadding="0" cellSpacing="0" style={{width: '100%', height: '100%'}}>
                     <tbody>
                       <tr>
-                        <td style={{height: '30px'}}></td>
-                      </tr>
-                      <tr>
-                        <td align="center" style={{paddingTop: '10px'}}>
-                          <Image
-                            src="/Lider-main.png"
-                            alt="Lider Electric"
-                            width={120}
-                            height={40}
-                            style={{display: 'block', marginBottom: '5px'}}
-                          />
-                          <p style={{
-                            fontSize: '12px',
-                            color: '#666666',
-                            margin: '5px 0 0',
-                            textAlign: 'center',
-                            fontStyle: 'italic'
-                          }}>
-                            Innovation · Creation · Inspiration
-                          </p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td align="center" style={{paddingTop: '5px'}}>
-                          <p style={{fontSize: '14px', fontWeight: 'bold', margin: '0'}}>@lider_electric</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td align="center" style={{paddingTop: '5px'}}>
-                          <table cellPadding="0" cellSpacing="0">
+                        <td style={{height: '200px', verticalAlign: 'top', backgroundImage: 'url(/wavy.png)', backgroundRepeat: 'no-repeat', backgroundPosition: 'left bottom', backgroundSize: '100px 100px'}}>
+                          <table cellPadding="0" cellSpacing="0" style={{width: '100%'}}>
                             <tbody>
                               <tr>
-                                <td style={{padding: '0 2px'}}>
-                                  <a href="https://www.instagram.com/liderelectric" target="_blank" rel="noopener noreferrer">
-                                    <Image src="/LiderInstagram.png" alt="Instagram" width={32} height={32} style={{display: 'block', border: 'none'}} />
-                                  </a>
+                                <td style={{height: '30px'}}></td>
+                              </tr>
+                              <tr>
+                                <td align="center" style={{paddingTop: '10px'}}>
+                                  <Image
+                                    src="/Lider-main.png"
+                                    alt="Lider Electric"
+                                    width={120}
+                                    height={40}
+                                    style={{display: 'block', marginBottom: '5px'}}
+                                  />
+                                  <p style={{
+                                    fontSize: '12px',
+                                    color: '#666666',
+                                    margin: '5px 0 0',
+                                    textAlign: 'center',
+                                    fontStyle: 'italic'
+                                  }}>
+                                    Innovation · Creation · Inspiration
+                                  </p>
                                 </td>
-                                <td style={{padding: '0 2px'}}>
-                                  <a href="https://www.facebook.com/liderelectric" target="_blank" rel="noopener noreferrer">
-                                    <Image src="/LiderFacebook.png" alt="Facebook" width={32} height={32} style={{display: 'block', border: 'none'}} />
-                                  </a>
+                              </tr>
+                              <tr>
+                                <td align="center" style={{paddingTop: '5px'}}>
+                                  <p style={{fontSize: '14px', fontWeight: 'bold', margin: '0'}}>@lider_electric</p>
                                 </td>
-                                <td style={{padding: '0 2px'}}>
-                                  <a href="https://www.youtube.com/@LiderElectric" target="_blank" rel="noopener noreferrer">
-                                    <Image src="/LiderYoutube.png" alt="YouTube" width={32} height={32} style={{display: 'block', border: 'none'}} />
-                                  </a>
-                                </td>
-                                <td style={{padding: '0 2px'}}>
-                                  <a href="https://www.linkedin.com/company/lider-electric/" target="_blank" rel="noopener noreferrer">
-                                    <Image src="/LiderLinkedIn.png" alt="LinkedIn" width={32} height={32} style={{display: 'block', border: 'none'}} />
-                                  </a>
+                              </tr>
+                              <tr>
+                                <td align="center" style={{paddingTop: '5px'}}>
+                                  <table cellPadding="0" cellSpacing="0">
+                                    <tbody>
+                                      <tr>
+                                        <td style={{padding: '0 2px'}}>
+                                          <a href="https://www.instagram.com/liderelectric" target="_blank" rel="noopener noreferrer">
+                                            <Image src="/LiderInstagram.png" alt="Instagram" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                          </a>
+                                        </td>
+                                        <td style={{padding: '0 2px'}}>
+                                          <a href="https://www.facebook.com/liderelectric" target="_blank" rel="noopener noreferrer">
+                                            <Image src="/LiderFacebook.png" alt="Facebook" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                          </a>
+                                        </td>
+                                        <td style={{padding: '0 2px'}}>
+                                          <a href="https://www.youtube.com/@LiderElectric" target="_blank" rel="noopener noreferrer">
+                                            <Image src="/LiderYoutube.png" alt="YouTube" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                          </a>
+                                        </td>
+                                        <td style={{padding: '0 2px'}}>
+                                          <a href="https://www.linkedin.com/company/lider-electric/" target="_blank" rel="noopener noreferrer">
+                                            <Image src="/LiderLinkedIn.png" alt="LinkedIn" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                          </a>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
                                 </td>
                               </tr>
                             </tbody>
@@ -153,22 +161,6 @@ export default function LiderSignatureForm({ company }) {
                       </tr>
                     </tbody>
                   </table>
-                  <div style={{
-                    position: 'absolute',
-                    bottom: '0',
-                    left: '0',
-                    width: '100px',
-                    height: '100px',
-                    zIndex: '1'
-                  }}>
-                    <Image
-                      src="/wavy.png"
-                      alt="Wavy background"
-                      layout="fill"
-                      objectFit="contain"
-                      style={{pointerEvents: 'none'}}
-                    />
-                  </div>
                 </td>
                 <td style={{width: '45%', verticalAlign: 'top', borderLeft: '2px solid #0066CC', padding: '0 0 0 20px', position: 'relative'}}>
                   <table cellPadding="0" cellSpacing="0" style={{width: '100%'}}>
