@@ -91,23 +91,10 @@ export default function LiderSignatureForm({ company }) {
             <tbody>
               <tr>
                 <td style={{width: '35%', verticalAlign: 'top', padding: '0 20px 0 0', position: 'relative'}}>
-                  <div style={{
-                    position: 'absolute',
-                    bottom: '0',  // Changed from top to bottom
-                    left: '0',
-                    width: '100px',  // Adjust as needed
-                    height: '100px',  // Adjust as needed
-                    backgroundImage: 'url("/wavy.png")',
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'bottom left',  // Changed to bottom left
-                    opacity: '1',
-                    zIndex: '1'
-                  }}></div>
                   <table cellPadding="0" cellSpacing="0" style={{width: '100%', position: 'relative', zIndex: '2'}}>
                     <tbody>
                       <tr>
-                        <td style={{height: '30px'}}></td> {/* This empty row will push content down */}
+                        <td style={{height: '30px'}}></td>
                       </tr>
                       <tr>
                         <td align="center" style={{paddingTop: '10px'}}>
@@ -166,6 +153,22 @@ export default function LiderSignatureForm({ company }) {
                       </tr>
                     </tbody>
                   </table>
+                  <div style={{
+                    position: 'absolute',
+                    bottom: '0',
+                    left: '0',
+                    width: '100px',
+                    height: '100px',
+                    zIndex: '1'
+                  }}>
+                    <Image
+                      src="/wavy.png"
+                      alt="Wavy background"
+                      layout="fill"
+                      objectFit="contain"
+                      style={{pointerEvents: 'none'}}
+                    />
+                  </div>
                 </td>
                 <td style={{width: '45%', verticalAlign: 'top', borderLeft: '2px solid #0066CC', padding: '0 0 0 20px', position: 'relative'}}>
                   <table cellPadding="0" cellSpacing="0" style={{width: '100%'}}>
