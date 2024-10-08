@@ -86,110 +86,52 @@ export default function LiderSignatureForm({ company }) {
     <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 bg-gray-50 p-4 lg:p-8 rounded-2xl shadow-lg max-w-7xl mx-auto">
       <div className="w-full lg:w-3/5 order-2 lg:order-1">
         <h2 className="text-xl lg:text-2xl font-semibold mb-4 lg:mb-6 text-gray-800">Signature Preview</h2>
-        <div id="signature-preview" className="bg-white p-3 lg:p-6 rounded-xl shadow-md overflow-x-auto">
+        <div id="signature-preview" className="bg-white p-3 lg:p-6 rounded-xl shadow-md" style={{maxWidth: '950px'}}>
           <table cellPadding="0" cellSpacing="0" style={{fontFamily: 'Arial, sans-serif', fontSize: '12px', lineHeight: '1.4', color: '#333333', borderCollapse: 'collapse', width: '100%', maxWidth: '100%'}}>
             <tbody>
               <tr>
-                <td style={{width: '65%', verticalAlign: 'top', padding: '0 20px 0 0'}}>
-                  <table cellPadding="0" cellSpacing="0" style={{width: '100%'}}>
+                <td style={{width: '35%', verticalAlign: 'top', padding: '0 20px 0 0', position: 'relative'}}>
+                  <div style={{
+                    position: 'absolute',
+                    bottom: '0',  // Changed from top to bottom
+                    left: '0',
+                    width: '100px',  // Adjust as needed
+                    height: '100px',  // Adjust as needed
+                    backgroundImage: 'url("/wavy.png")',
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'bottom left',  // Changed to bottom left
+                    opacity: '1',
+                    zIndex: '1'
+                  }}></div>
+                  <table cellPadding="0" cellSpacing="0" style={{width: '100%', position: 'relative', zIndex: '2'}}>
                     <tbody>
                       <tr>
-                        <td style={{position: 'relative', paddingBottom: '10px'}}>
-                          <table cellPadding="0" cellSpacing="0" style={{width: '100%'}}>
-                            <tbody>
-                              <tr>
-                                <td style={{verticalAlign: 'top'}}>
-                                  <strong style={{fontSize: '24px', color: '#000000', display: 'block', marginBottom: '5px'}}>
-                                    {formData.name || 'Full Name'}
-                                  </strong>
-                                  <span style={{color: '#666666', display: 'block'}}>{formData.position || 'Job Title'}</span>
-                                  <span style={{color: '#666666', display: 'block'}}>{formData.company || 'Lider Electric'}</span>
-                                </td>
-                                <td style={{width: '96px', verticalAlign: 'top'}}>
-                                  <Image 
-                                    src="/LiderTriangle.png" 
-                                    alt="Corner" 
-                                    width={96} 
-                                    height={96} 
-                                    style={{display: 'block'}}
-                                  />
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <table cellPadding="0" cellSpacing="0" style={{width: '100%'}}>
-                            <tbody>
-                              <tr>
-                                <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
-                                  <Image src="/LiderEmail-Icon.png" alt="Email" width={20} height={20} className="blue-filter" />
-                                </td>
-                                <td style={{color: '#666666'}}>
-                                  <a href={`mailto:${formData.email || 'your.name@lider-electric.com'}`} style={{color: '#0066cc', textDecoration: 'none'}}>{formData.email || 'your.name@lider-electric.com'}</a>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
-                                  <Image src="/LiderPhone-Icon.png" alt="Phone" width={20} height={20} className="blue-filter" />
-                                </td>
-                                <td style={{color: '#666666'}}>
-                                  <span>{formData.phone}</span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
-                                  <Image src="/LiderLocation-Icon.png" alt="Location" width={20} height={20} className="blue-filter" />
-                                </td>
-                                <td style={{color: '#666666'}}>
-                                  <span>4695 MacArthur Court, 11th Floor Newport Beach, CA 92660</span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
-                                  <Image src="/LiderWeb-Icon.png" alt="Website" width={20} height={20} className="blue-filter" />
-                                </td>
-                                <td style={{color: '#666666'}}>
-                                  <a href={formData.website || 'https://www.lider-electric.com'} style={{color: '#0066cc', textDecoration: 'none'}}>{formData.website || 'www.lider-electric.com'}</a>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-                <td style={{width: '35%', verticalAlign: 'top', borderLeft: '2px solid #0066CC', padding: '0 0 0 20px'}}>
-                  <table cellPadding="0" cellSpacing="0" style={{width: '100%'}}>
-                    <tbody>
-                      <tr>
-                        <td align="center">
-                          <Image
-                            src="/Lider-logo.png"
-                            alt="Lider Electric Logo"
-                            width={100}
-                            height={100}
-                            className="rounded-full"
-                          />
-                        </td>
+                        <td style={{height: '30px'}}></td> {/* This empty row will push content down */}
                       </tr>
                       <tr>
                         <td align="center" style={{paddingTop: '10px'}}>
                           <Image
                             src="/Lider-main.png"
                             alt="Lider Electric"
-                            width={120}  // Reduced from 150
-                            height={40}  // Reduced from 50
+                            width={120}
+                            height={40}
                             style={{display: 'block', marginBottom: '5px'}}
                           />
+                          <p style={{
+                            fontSize: '12px',
+                            color: '#666666',
+                            margin: '5px 0 0',
+                            textAlign: 'center',
+                            fontStyle: 'italic'
+                          }}>
+                            Innovation · Creation · Inspiration
+                          </p>
                         </td>
                       </tr>
                       <tr>
                         <td align="center" style={{paddingTop: '5px'}}>
-                          <p style={{fontSize: '14px', fontWeight: 'bold', margin: '0'}}>Connect with us!</p>
+                          <p style={{fontSize: '14px', fontWeight: 'bold', margin: '0'}}>@lider_electric</p>
                         </td>
                       </tr>
                       <tr>
@@ -224,6 +166,96 @@ export default function LiderSignatureForm({ company }) {
                       </tr>
                     </tbody>
                   </table>
+                </td>
+                <td style={{width: '45%', verticalAlign: 'top', borderLeft: '2px solid #0066CC', padding: '0 0 0 20px', position: 'relative'}}>
+                  <table cellPadding="0" cellSpacing="0" style={{width: '100%'}}>
+                    <tbody>
+                      <tr>
+                        <td style={{position: 'relative', paddingBottom: '10px'}}>
+                          <table cellPadding="0" cellSpacing="0" style={{width: '100%'}}>
+                            <tbody>
+                              <tr>
+                                <td style={{verticalAlign: 'top'}}>
+                                  <strong style={{
+                                    fontSize: '24px',
+                                    color: '#000000',
+                                    display: 'block',
+                                    marginBottom: '5px',
+                                    maxWidth: '300px',  // Adjust this value as needed
+                                    wordWrap: 'break-word',
+                                    overflowWrap: 'break-word',
+                                    lineHeight: '1.2',  // Adjust this value for appropriate line spacing
+                                  }}>
+                                    {formData.name || 'Full Name'}
+                                  </strong>
+                                  <span style={{color: '#666666', display: 'block'}}>{formData.position || 'Job Title'}</span>
+                                  <span style={{color: '#666666', display: 'block'}}>{formData.company || 'Lider Electric'}</span>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table cellPadding="0" cellSpacing="0" style={{width: '100%'}}>
+                            <tbody>
+                              <tr style={{paddingBottom: '8px', display: 'block'}}>
+                                <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
+                                  <Image src="/LiderEmail-Icon.png" alt="Email" width={20} height={20} className="blue-filter" />
+                                </td>
+                                <td style={{color: '#666666'}}>
+                                  <a href={`mailto:${formData.email || 'your.name@lider-electric.com'}`} style={{color: '#0066cc', textDecoration: 'none'}}>{formData.email || 'your.name@lider-electric.com'}</a>
+                                </td>
+                              </tr>
+                              <tr style={{paddingBottom: '8px', display: 'block'}}>
+                                <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
+                                  <Image src="/LiderPhone-Icon.png" alt="Phone" width={20} height={20} className="blue-filter" />
+                                </td>
+                                <td style={{color: '#666666'}}>
+                                  <span>{formData.phone}</span>
+                                </td>
+                              </tr>
+                              <tr style={{paddingBottom: '8px', display: 'block'}}>
+                                <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
+                                  <Image src="/LiderLocation-Icon.png" alt="Location" width={20} height={20} className="blue-filter" />
+                                </td>
+                                <td style={{color: '#666666'}}>
+                                  <span>4695 MacArthur Court, 11th Floor Newport Beach, CA 92660</span>
+                                </td>
+                              </tr>
+                              <tr style={{paddingBottom: '8px', display: 'block'}}>
+                                <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
+                                  <Image src="/LiderWeb-Icon.png" alt="Website" width={20} height={20} className="blue-filter" />
+                                </td>
+                                <td style={{color: '#666666'}}>
+                                  <a href={formData.website || 'https://www.lider-electric.com'} style={{color: '#0066cc', textDecoration: 'none'}}>{formData.website || 'www.lider-electric.com'}</a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td style={{width: '20%', verticalAlign: 'top', padding: '0', position: 'relative'}}>
+                  <div style={{
+                    position: 'absolute',
+                    top: '0',
+                    right: '-40px',  // Increased to -40px
+                    width: '200px',
+                    height: '200px',
+                    overflow: 'visible'  // Allow the image to overflow its container
+                  }}>
+                    <Image
+                      src="/trying.png"
+                      alt="Trying"
+                      layout="fill"
+                      objectFit="contain"
+                      style={{pointerEvents: 'none'}}
+                    />
+                  </div>
                 </td>
               </tr>
             </tbody>
