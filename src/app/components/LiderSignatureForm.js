@@ -11,7 +11,7 @@ export default function LiderSignatureForm({ company }) {
     name: '',
     position: '',
     email: '',
-    phone: '(833) 977-3915',
+    phone: '(833) 977-3915', // Keep this as a constant
     company: '',
     website: '',
   });
@@ -19,20 +19,11 @@ export default function LiderSignatureForm({ company }) {
   const handleChange = (e) => {
     let { name, value } = e.target;
     
-    if (name === 'phone') {
-      // Remove all non-digit characters
-      value = value.replace(/\D/g, '');
-      
-      // Format the phone number
-      if (value.length > 0) {
-        if (value.length <= 3) {
-          value = `(${value}`;
-        } else if (value.length <= 6) {
-          value = `(${value.slice(0, 3)}) ${value.slice(3)}`;
-        } else {
-          value = `(${value.slice(0, 3)}) ${value.slice(3, 6)}-${value.slice(6, 10)}`;
-        }
-      }
+    if (name === 'email') {
+      // Remove any existing domain
+      value = value.split('@')[0];
+      // Append the domain
+      value = `${value}@lider-electric.com`;
     }
     
     setFormData({ ...formData, [name]: value });
@@ -290,24 +281,21 @@ export default function LiderSignatureForm({ company }) {
             className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent focus:outline-none transition-all duration-200 ease-in-out text-gray-800 placeholder-gray-400"
             required
           />
-          <input
-            type="email"
-            name="email"
-            placeholder="your.name@lider-electric.com"
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent focus:outline-none transition-all duration-200 ease-in-out text-gray-800 placeholder-gray-400"
-            required
-          />
-          <input
-            type="tel"
-            name="phone"
-            placeholder="(833) 977-3915"
-            value={formData.phone}
-            onChange={handleChange}
-            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent focus:outline-none transition-all duration-200 ease-in-out text-gray-800 placeholder-gray-400"
-            required
-          />
+          <div className="relative">
+            <input
+              type="text"
+              name="email"
+              placeholder="your.name"
+              value={formData.email.split('@')[0]}
+              onChange={handleChange}
+              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent focus:outline-none transition-all duration-200 ease-in-out text-gray-800 placeholder-gray-400 pr-[145px]"
+              required
+            />
+            <span className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
+              @lider-electric.com
+            </span>
+          </div>
+          {/* Phone input field removed */}
         </form>
       </div>
     </div>
