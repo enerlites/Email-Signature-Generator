@@ -227,8 +227,8 @@ export default function LiderSignatureForm({ company }) {
                     overflow: 'visible'  // Allow the image to overflow its container
                   }}>
                     <Image
-                      src="/trying.png"
-                      alt="Trying"
+                      src="/sig1.png"
+                      alt="Signature"
                       layout="fill"
                       objectFit="contain"
                       style={{pointerEvents: 'none'}}
