@@ -77,7 +77,7 @@ export default function LiderSignatureForm({ company }) {
       <div className="w-full lg:w-3/5 order-2 lg:order-1">
         <h2 className="text-xl lg:text-2xl font-semibold mb-4 lg:mb-6 text-gray-800">Signature Preview</h2>
         <div id="signature-preview" className="bg-white p-3 lg:p-6 rounded-xl shadow-md" style={{maxWidth: '950px'}}>
-          <table cellPadding="0" cellSpacing="0" style={{fontFamily: 'Arial, sans-serif', fontSize: '12px', lineHeight: '1.4', color: '#333333', borderCollapse: 'collapse', width: '100%', maxWidth: '100%'}}>
+          <table cellPadding="0" cellSpacing="0" style={{fontFamily: 'Arial, sans-serif', fontSize: '12px', lineHeight: '1.4', color: '#333333', borderCollapse: 'collapse', width: '100%', maxWidth: '100%', marginBottom: '0'}}>
             <tbody>
               <tr>
                 <td style={{width: '35%', verticalAlign: 'top', padding: '0 20px 0 0', position: 'relative'}}>
@@ -229,7 +229,7 @@ export default function LiderSignatureForm({ company }) {
               </tr>
             </tbody>
           </table>
-          <table cellPadding="0" cellSpacing="0" style={{width: '100%', maxWidth: '600px', marginTop: '20px', borderTop: '1px solid #e0e0e0'}}>
+          <table cellPadding="0" cellSpacing="0" style={{width: '100%', maxWidth: '600px', marginTop: '0', borderTop: '1px solid #e0e0e0'}}>
             <tbody>
               <tr>
                 <td style={{paddingTop: '10px', fontSize: '10px', color: '#888888'}}>
