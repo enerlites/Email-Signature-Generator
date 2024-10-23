@@ -129,7 +129,7 @@ export default function SignatureForm({ company }) {
                             <tbody>
                               <tr>
                                 <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
-                                  <Image src="/Email-Icon.png" alt="Email" width={20} height={20} className="green-filter" />
+                                  <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/Email-Icon.png" alt="Email" width={20} height={20} className="green-filter" />
                                 </td>
                                 <td style={{color: '#666666'}}>
                                   <a href={`mailto:${formData.email || 'your.name@topgreener.com'}`} style={{color: '#0066cc', textDecoration: 'none'}}>{formData.email || 'your.name@topgreener.com'}</a>
@@ -137,7 +137,7 @@ export default function SignatureForm({ company }) {
                               </tr>
                               <tr>
                                 <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
-                                  <Image src="/Phone-Icon.png" alt="Phone" width={20} height={20} className="green-filter" />
+                                  <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/Phone-Icon.png" alt="Phone" width={20} height={20} className="green-filter" />
                                 </td>
                                 <td style={{color: '#666666'}}>
                                   <span>{formData.phone}</span>
@@ -145,7 +145,7 @@ export default function SignatureForm({ company }) {
                               </tr>
                               <tr>
                                 <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
-                                  <Image src="/Location-Icon.png" alt="Location" width={20} height={20} className="green-filter" />
+                                  <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/Location-Icon.png" alt="Location" width={20} height={20} className="green-filter" />
                                 </td>
                                 <td style={{color: '#666666'}}>
                                   <span>19800 MacArthur Blvd #300, Irvine, CA 92612</span>
@@ -153,7 +153,7 @@ export default function SignatureForm({ company }) {
                               </tr>
                               <tr>
                                 <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
-                                  <Image src="/Web-Icon.png" alt="Website" width={20} height={20} className="green-filter" />
+                                  <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/Web-Icon.png" alt="Website" width={20} height={20} className="green-filter" />
                                 </td>
                                 <td style={{color: '#666666'}}>
                                   <a href={formData.website || 'https://topgreener.com'} style={{color: '#0066cc', textDecoration: 'none'}}>{formData.website || 'topgreener.com'}</a>
@@ -172,7 +172,7 @@ export default function SignatureForm({ company }) {
                       <tr>
                         <td align="center">
                           <Image
-                            src="/TG-logo.png"
+                            src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/TG-logo.png"
                             alt="Top Greener Logo"
                             width={120}
                             height={120}
@@ -183,7 +183,7 @@ export default function SignatureForm({ company }) {
                       <tr>
                         <td align="center">
                           <Image
-                            src="/TG-main.png"
+                            src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/TG-main.png"
                             alt="Top Greener"
                             width={150}
                             height={50}
@@ -203,22 +203,22 @@ export default function SignatureForm({ company }) {
                               <tr>
                                 <td style={{padding: '0 2px'}}>
                                   <a href="https://www.instagram.com/topgreener" target="_blank" rel="noopener noreferrer">
-                                    <Image src="/Instagram.png" alt="Instagram" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                    <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/Instagram.png" alt="Instagram" width={32} height={32} style={{display: 'block', border: 'none'}} />
                                   </a>
                                 </td>
                                 <td style={{padding: '0 2px'}}>
                                   <a href="https://www.facebook.com/topgreener" target="_blank" rel="noopener noreferrer">
-                                    <Image src="/Facebook.png" alt="Facebook" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                    <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/Facebook.png" alt="Facebook" width={32} height={32} style={{display: 'block', border: 'none'}} />
                                   </a>
                                 </td>
                                 <td style={{padding: '0 2px'}}>
                                   <a href="https://www.youtube.com/@TOPGREENER-Channel" target="_blank" rel="noopener noreferrer">
-                                    <Image src="/Youtube.png" alt="YouTube" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                    <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/Youtube.png" alt="YouTube" width={32} height={32} style={{display: 'block', border: 'none'}} />
                                   </a>
                                 </td>
                                 <td style={{padding: '0 2px'}}>
                                   <a href="https://www.linkedin.com/company/top-greener/" target="_blank" rel="noopener noreferrer">
-                                    <Image src="/LinkedIn.png" alt="LinkedIn" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                    <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LinkedIn.png" alt="LinkedIn" width={32} height={32} style={{display: 'block', border: 'none'}} />
                                   </a>
                                 </td>
                               </tr>

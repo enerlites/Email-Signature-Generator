@@ -90,7 +90,7 @@ export default function LiderSignatureForm({ company }) {
                       <tr>
                         <td align="center" style={{paddingTop: '10px'}}>
                           <Image
-                            src="/Lider-main.png"
+                            src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/Lider-main.png"
                             alt="Lider Electric"
                             width={120}
                             height={40}
@@ -119,22 +119,22 @@ export default function LiderSignatureForm({ company }) {
                               <tr>
                                 <td style={{padding: '0 2px'}}>
                                   <a href="https://www.instagram.com/liderelectric" target="_blank" rel="noopener noreferrer">
-                                    <Image src="/LiderInstagram.png" alt="Instagram" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                    <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderInstagram.png" alt="Instagram" width={32} height={32} style={{display: 'block', border: 'none'}} />
                                   </a>
                                 </td>
                                 <td style={{padding: '0 2px'}}>
                                   <a href="https://www.facebook.com/liderelectric" target="_blank" rel="noopener noreferrer">
-                                    <Image src="/LiderFacebook.png" alt="Facebook" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                    <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderFacebook.png" alt="Facebook" width={32} height={32} style={{display: 'block', border: 'none'}} />
                                   </a>
                                 </td>
                                 <td style={{padding: '0 2px'}}>
                                   <a href="https://www.youtube.com/@LiderElectric" target="_blank" rel="noopener noreferrer">
-                                    <Image src="/LiderYoutube.png" alt="YouTube" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                    <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderYoutube.png" alt="YouTube" width={32} height={32} style={{display: 'block', border: 'none'}} />
                                   </a>
                                 </td>
                                 <td style={{padding: '0 2px'}}>
                                   <a href="https://www.linkedin.com/company/lider-electric/" target="_blank" rel="noopener noreferrer">
-                                    <Image src="/LiderLinkedIn.png" alt="LinkedIn" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                    <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderLinkedIn.png" alt="LinkedIn" width={32} height={32} style={{display: 'block', border: 'none'}} />
                                   </a>
                                 </td>
                               </tr>
@@ -180,7 +180,7 @@ export default function LiderSignatureForm({ company }) {
                             <tbody>
                               <tr style={{paddingBottom: '8px', display: 'block'}}>
                                 <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
-                                  <Image src="/LiderEmail-Icon.png" alt="Email" width={20} height={20} className="blue-filter" />
+                                  <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderEmail-Icon.png" alt="Email" width={20} height={20} className="blue-filter" />
                                 </td>
                                 <td style={{color: '#666666'}}>
                                   <a href={`mailto:${formData.email || 'your.name@lider-electric.com'}`} style={{color: '#0066cc', textDecoration: 'none'}}>{formData.email || 'your.name@lider-electric.com'}</a>
@@ -188,7 +188,7 @@ export default function LiderSignatureForm({ company }) {
                               </tr>
                               <tr style={{paddingBottom: '8px', display: 'block'}}>
                                 <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
-                                  <Image src="/LiderPhone-Icon.png" alt="Phone" width={20} height={20} className="blue-filter" />
+                                  <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderPhone-Icon.png" alt="Phone" width={20} height={20} className="blue-filter" />
                                 </td>
                                 <td style={{color: '#666666'}}>
                                   <span>{formData.phone}</span>
@@ -196,7 +196,7 @@ export default function LiderSignatureForm({ company }) {
                               </tr>
                               <tr style={{paddingBottom: '8px', display: 'block'}}>
                                 <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
-                                  <Image src="/LiderLocation-Icon.png" alt="Location" width={20} height={20} className="blue-filter" />
+                                  <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderLocation-Icon.png" alt="Location" width={20} height={20} className="blue-filter" />
                                 </td>
                                 <td style={{color: '#666666'}}>
                                   <span>4695 MacArthur Court, 11th Floor Newport Beach, CA 92660</span>
@@ -204,7 +204,7 @@ export default function LiderSignatureForm({ company }) {
                               </tr>
                               <tr style={{paddingBottom: '8px', display: 'block'}}>
                                 <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
-                                  <Image src="/LiderWeb-Icon.png" alt="Website" width={20} height={20} className="blue-filter" />
+                                  <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderWeb-Icon.png" alt="Website" width={20} height={20} className="blue-filter" />
                                 </td>
                                 <td style={{color: '#666666'}}>
                                   <a href={formData.website || 'https://www.lider-electric.com'} style={{color: '#0066cc', textDecoration: 'none'}}>{formData.website || 'www.lider-electric.com'}</a>
@@ -227,7 +227,7 @@ export default function LiderSignatureForm({ company }) {
                     overflow: 'visible'  // Allow the image to overflow its container
                   }}>
                     <Image
-                      src="/sig1.png"
+                      src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/sig1.png"
                       alt="Signature"
                       layout="fill"
                       objectFit="contain"
