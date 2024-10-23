@@ -111,22 +111,22 @@ export default function LiderSignatureForm({ company }) {
                             <tbody>
                               <tr>
                                 <td style={{padding: '0 2px'}}>
-                                  <a href="https://www.instagram.com/liderelectric" target="_blank" rel="noopener noreferrer">
+                                  <a href="https://www.instagram.com/lider_electric" target="_blank" rel="noopener noreferrer">
                                     <img src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderInstagram.png" alt="Instagram" width="32" height="32" style={{display: 'block', border: 'none'}} />
                                   </a>
                                 </td>
                                 <td style={{padding: '0 2px'}}>
-                                  <a href="https://www.facebook.com/liderelectric" target="_blank" rel="noopener noreferrer">
+                                  <a href="https://www.facebook.com/LiderElectric1/" target="_blank" rel="noopener noreferrer">
                                     <img src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderFacebook.png" alt="Facebook" width="32" height="32" style={{display: 'block', border: 'none'}} />
                                   </a>
                                 </td>
                                 <td style={{padding: '0 2px'}}>
-                                  <a href="https://www.youtube.com/@LiderElectric" target="_blank" rel="noopener noreferrer">
+                                  <a href="https://www.youtube.com/@Lider_Electric" target="_blank" rel="noopener noreferrer">
                                     <img src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderYoutube.png" alt="YouTube" width="32" height="32" style={{display: 'block', border: 'none'}} />
                                   </a>
                                 </td>
                                 <td style={{padding: '0 2px'}}>
-                                  <a href="https://www.linkedin.com/company/lider-electric/" target="_blank" rel="noopener noreferrer">
+                                  <a href="https://www.linkedin.com/company/lider-electric-inc/" target="_blank" rel="noopener noreferrer">
                                     <img src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderLinkedIn.png" alt="LinkedIn" width="32" height="32" style={{display: 'block', border: 'none'}} />
                                   </a>
                                 </td>
