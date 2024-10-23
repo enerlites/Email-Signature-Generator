@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import { ClipboardIcon } from '@heroicons/react/24/outline';
 import toast from 'react-hot-toast';
 import '../css/LIDERbutton.css';
@@ -89,13 +88,7 @@ export default function LiderSignatureForm({ company }) {
                       </tr>
                       <tr>
                         <td align="center" style={{paddingTop: '10px'}}>
-                          <Image
-                            src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/Lider-main.png"
-                            alt="Lider Electric"
-                            width={120}
-                            height={40}
-                            style={{display: 'block', marginBottom: '5px'}}
-                          />
+                          <img src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/Lider-main.png" alt="Lider Electric" width="120" height="40" style={{display: 'block', marginBottom: '5px'}} />
                           <p style={{
                             fontSize: '12px',
                             color: '#666666',
@@ -119,22 +112,22 @@ export default function LiderSignatureForm({ company }) {
                               <tr>
                                 <td style={{padding: '0 2px'}}>
                                   <a href="https://www.instagram.com/liderelectric" target="_blank" rel="noopener noreferrer">
-                                    <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderInstagram.png" alt="Instagram" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                    <img src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderInstagram.png" alt="Instagram" width="32" height="32" style={{display: 'block', border: 'none'}} />
                                   </a>
                                 </td>
                                 <td style={{padding: '0 2px'}}>
                                   <a href="https://www.facebook.com/liderelectric" target="_blank" rel="noopener noreferrer">
-                                    <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderFacebook.png" alt="Facebook" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                    <img src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderFacebook.png" alt="Facebook" width="32" height="32" style={{display: 'block', border: 'none'}} />
                                   </a>
                                 </td>
                                 <td style={{padding: '0 2px'}}>
                                   <a href="https://www.youtube.com/@LiderElectric" target="_blank" rel="noopener noreferrer">
-                                    <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderYoutube.png" alt="YouTube" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                    <img src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderYoutube.png" alt="YouTube" width="32" height="32" style={{display: 'block', border: 'none'}} />
                                   </a>
                                 </td>
                                 <td style={{padding: '0 2px'}}>
                                   <a href="https://www.linkedin.com/company/lider-electric/" target="_blank" rel="noopener noreferrer">
-                                    <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderLinkedIn.png" alt="LinkedIn" width={32} height={32} style={{display: 'block', border: 'none'}} />
+                                    <img src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderLinkedIn.png" alt="LinkedIn" width="32" height="32" style={{display: 'block', border: 'none'}} />
                                   </a>
                                 </td>
                               </tr>
@@ -180,7 +173,7 @@ export default function LiderSignatureForm({ company }) {
                             <tbody>
                               <tr style={{paddingBottom: '8px', display: 'block'}}>
                                 <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
-                                  <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderEmail-Icon.png" alt="Email" width={20} height={20} className="blue-filter" />
+                                  <img src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderEmail-Icon.png" alt="Email" width="20" height="20" style={{display: 'block'}} />
                                 </td>
                                 <td style={{color: '#666666'}}>
                                   <a href={`mailto:${formData.email || 'your.name@lider-electric.com'}`} style={{color: '#0066cc', textDecoration: 'none'}}>{formData.email || 'your.name@lider-electric.com'}</a>
@@ -188,7 +181,7 @@ export default function LiderSignatureForm({ company }) {
                               </tr>
                               <tr style={{paddingBottom: '8px', display: 'block'}}>
                                 <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
-                                  <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderPhone-Icon.png" alt="Phone" width={20} height={20} className="blue-filter" />
+                                  <img src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderPhone-Icon.png" alt="Phone" width="20" height="20" style={{display: 'block'}} />
                                 </td>
                                 <td style={{color: '#666666'}}>
                                   <span>{formData.phone}</span>
@@ -196,7 +189,7 @@ export default function LiderSignatureForm({ company }) {
                               </tr>
                               <tr style={{paddingBottom: '8px', display: 'block'}}>
                                 <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
-                                  <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderLocation-Icon.png" alt="Location" width={20} height={20} className="blue-filter" />
+                                  <img src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderLocation-Icon.png" alt="Location" width="20" height="20" style={{display: 'block'}} />
                                 </td>
                                 <td style={{color: '#666666'}}>
                                   <span>4695 MacArthur Court, 11th Floor Newport Beach, CA 92660</span>
@@ -204,7 +197,7 @@ export default function LiderSignatureForm({ company }) {
                               </tr>
                               <tr style={{paddingBottom: '8px', display: 'block'}}>
                                 <td style={{paddingRight: '5px', width: '24px', verticalAlign: 'top'}}>
-                                  <Image src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderWeb-Icon.png" alt="Website" width={20} height={20} className="blue-filter" />
+                                  <img src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/LiderWeb-Icon.png" alt="Website" width="20" height="20" style={{display: 'block'}} />
                                 </td>
                                 <td style={{color: '#666666'}}>
                                   <a href={formData.website || 'https://www.lider-electric.com'} style={{color: '#0066cc', textDecoration: 'none'}}>{formData.website || 'www.lider-electric.com'}</a>
@@ -221,17 +214,15 @@ export default function LiderSignatureForm({ company }) {
                   <div style={{
                     position: 'absolute',
                     top: '0',
-                    right: '-40px',  // Increased to -40px
+                    right: '-40px',
                     width: '200px',
                     height: '200px',
-                    overflow: 'visible'  // Allow the image to overflow its container
+                    overflow: 'visible'
                   }}>
-                    <Image
+                    <img
                       src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/sig1.png"
                       alt="Signature"
-                      layout="fill"
-                      objectFit="contain"
-                      style={{pointerEvents: 'none'}}
+                      style={{width: '100%', height: '100%', objectFit: 'contain', pointerEvents: 'none'}}
                     />
                   </div>
                 </td>
