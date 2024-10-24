@@ -219,17 +219,17 @@ export default function LiderSignatureForm({ company }) {
                     height: '200px',
                     overflow: 'visible'
                   }}>
-                    <img
+                    {/* <img
                       src="https://raw.githubusercontent.com/enerlites/Email-Signature-Generator/main/public/sig1.png"
                       alt="Signature"
                       style={{width: '100%', height: '100%', objectFit: 'contain', pointerEvents: 'none'}}
-                    />
+                    /> */}
                   </div>
                 </td>
               </tr>
             </tbody>
           </table>
-          <table cellPadding="0" cellSpacing="0" style={{width: '100%', maxWidth: '600px', marginTop: '0', borderTop: '1px solid #e0e0e0'}}>
+          <table cellPadding="0" cellSpacing="0" style={{width: '100%', maxWidth: '600px', marginTop: '20px', borderTop: '1px solid #e0e0e0'}}>
             <tbody>
               <tr>
                 <td style={{paddingTop: '10px', fontSize: '10px', color: '#888888'}}>
